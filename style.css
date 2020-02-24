@@ -224,6 +224,30 @@ nav a:hover {
   margin: 10px 0;
 }
 
+.freelance {
+  background-color: #536DFE;
+  padding: 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 21px;
+}
+
+.freelance p {
+  margin: 15px 0;
+  width: 100% !important;
+  color: #f1f1f1;
+}
+
+.freelance i {
+  color: lightseagreen;
+}
+
 .contact {
   height: 80vh;
   background-color: #f7f7f7;
