@@ -219,6 +219,7 @@ nav a:hover {
 }
 
 .contact {
+  height: 80vh;
   background-color: #f7f7f7;
 }
 
@@ -238,6 +239,10 @@ footer .heart {
 footer #last-update {
   font-size: 12px;
   font-weight: bold;
+}
+
+footer .to-top-footer {
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
