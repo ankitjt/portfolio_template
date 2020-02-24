@@ -1,118 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Web Developer,Ankit Thakur,React" />
-		<meta name="robots" content="index, follow" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>AJT- My Portfolio</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-        
-		<div class="wrapper">
-            <div class="menu-mobile">
-                <i class="fas fa-times close-drop-menu"></i>
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-                <a href="#">Blog</a>
-            </div>
-			<header>
-                <div class="burger-menu-icon">
-                    <div class="showLater">
-                        <span id="darkMode"><i class="fas fa-moon"></i></span>
-                        <span id="myName">AjT</span>
-                    </div>
-                    
-                    <i class="fas fa-bars"></i>
-                </div>
-				<img src="./assets/avatar.svg" alt="my-avatar" class="avatar" />
-				<div class="header-content">
-					<h1>Jhon Doe</h1>
-					<p>Front-end Developer</p>
-					<div class="skills-tag">
-						<span class="skill-set">React</span>
-						<span class="skill-set">Python</span>
-						<span class="skill-set">Express</span>
-						<span class="skill-set">Node js</span>
-						<span class="skill-set">Bootstrap</span>
-						<span class="skill-set">Firebase</span>
-                    </div>
-                    <a class="download-cv" href="./assets/Resume.pdf" download="">
-                        <i class="fas fa-file-download"></i> Resume 
-                    </a>
-				</div>
-			</header>
-			<main class="projects">
-				<h1>Projects</h1>
-			</main>
-			<main class="freelance">
-				<p>Available for freelance opportunities</p>
-				<i class="fas fa-check-double"></i>
 
-			</main>
-			<main class="contact-us">
-				<h1>Reach Out</h1>
-				<img
-					src="./assets/reach-out.svg"
-					alt="reach-out-img"
-					class="reach-out-image"
-				/>
-				<div class="contact-details">
-					<div class="email">
-						<p class="label-name">Email</p>
-						<p>ankitjeetthakur@gmail.com</p>
-					</div>
-					<div class="mobile">
-						<p class="label-name">Mobile</p>
-						<p>+91-8527112221</p>
-					</div>
-					<div class="social">
-						<p class="label-name">Socials</p>
-						<ul>
-							<li>
-                                <a href="#" name="github">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </li>
-							<li>
-                                <a href="#" name="dribbble">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
-                            </li>
-							<li>
-                                <a href="#" name="instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-							<li>
-                                <a href="#" name="stack-overflow">
-                                    <i class="fab fa-stack-overflow"></i>
-                                </a>
-                            </li>
-						</ul>
-                    </div>
-                    <div class="resume">
-                        <p class="label-name">Resume</p>
-                        <a class="download-cv" href="./assets/Resume.pdf" download="">
-                            <i class="fas fa-file-download"></i>
-                        </a>
-                    </div>
-				</div>
-			</main>
-			<footer>
-                <p>
-                    Made with <span class="heart">&#10084</span>. All Rights Reserved.
-                </p>
-                <p id="last-update">Last Updated on: 19th Feburary, 2020</p>
-            </footer>
-		</div>
-		<script src="main.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web Developer,Ankit Thakur,React" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AJT- My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper" >
+        <p class="logo" id="home">AjT</p>
+        <nav >
+            <a href="#">Home</a>
+            <a href="#project-section">Projects</a>
+            <a href="#blog-section">blog</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+        <main class="intro">
+            <div class="intro-left">
+                <img src="./assets/banner-img2.svg" alt="my-snap">
+            </div>
+            <div class="intro-right">
+                <h1>Jhon Doe</h1>
+                <p>Front end developer from New Delhi, India.</p>
+                <div class="tags">
+                    <span class="tagNames">React </span>
+                    <span class="tagNames">Node </span>
+                    <span class="tagNames">Express </span>
+                    <span class="tagNames">Python</span>
+                    <span class="tagNames">Responsive</span>
+                </div>
+                <div class="download-cv">
+                   <span> Resume <i class="fas fa-file-download"></i></span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Projects -->
+        <main class="projects content-wrapper" id="project-section">
+            <h1>
+                <span>projects</span>
+                <a href="#home" class="up-level">
+                    <i class="fas fa-level-up-alt"></i>
+                </a>
+            </h1>
+        </main>
+
+        <!-- Contact -->
+        <main class="contact content-wrapper" id="contact-section">
+            <h1>
+                <span>contact</span>
+                <a href="#home" class="up-level">
+                    <i class="fas fa-level-up-alt"></i>
+                </a>
+            </h1>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Made with <span class="heart">&#10084</span>. All Rights Reserved.
+            </p>
+            <p id="last-update">Last Updated on: 24th Feburary, 2020</p>
+        </footer>
+    </div>
+ 
+    <!-- <script src="main.js"></script> -->
+</body>
+
 </html>
