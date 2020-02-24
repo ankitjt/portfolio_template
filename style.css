@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,600i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Marmelad&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,120 +16,59 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-}
-
-.menu-mobile {
-  position: fixed;
-  width: 100%;
-  height: 40vh;
-  background-color: #f1f1f1;
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: -100%;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.menu-mobile .close-drop-menu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-}
-
-.menu-mobile a {
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin: 15px 0;
-  font-family: 'Playfair Display';
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.menu-mobile a:hover {
-  color: orangered;
+  background-color: #eeeeee;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
+  height: auto;
+  background-color: #fff;
+  margin: 0 150px;
 }
 
-header {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #eeeeee;
-  color: #525252;
-  position: relative;
+.logo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 70px 0 50px 0;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+  font-family: 'Allerta Stencil';
+  font-family: 'Marmelad';
 }
 
-header .burger-menu-icon {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 99;
-  text-align: right;
-  padding: 20px;
-  cursor: pointer;
+nav {
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin: 0 20px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+nav a:hover {
+  color: orangered;
+}
+
+.intro {
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-header .burger-menu-icon #myName {
-  color: #ffffff;
-  letter-spacing: 2px;
-  display: none;
-  margin-left: 10px;
-}
-
-header .burger-menu-icon i {
-  color: #f1f1f1;
-}
-
-header .avatar {
-  position: absolute;
-  top: -150px;
-  height: 600px;
-}
-
-header .header-content {
-  margin-top: 450px;
+.intro .intro-left {
+  height: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,145 +78,91 @@ header .header-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.intro .intro-left img {
+  height: 400px;
+  width: 400px;
+}
+
+.intro .intro-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-header .header-content h1 {
-  text-align: center;
-  font-family: 'Playfair Display';
-  font-size: 70px;
+.intro .intro-right h1 {
+  font-size: 60px;
 }
 
-header .header-content p {
-  font-weight: 600;
+.intro .intro-right p {
+  margin-bottom: 60px;
+  font-style: italic;
+  font-size: 11px;
 }
 
-header .header-content .skills-tag {
+.intro .intro-right .tags {
+  border-radius: 15px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-  padding: 0 20px;
 }
 
-header .header-content .skills-tag .skill-set {
-  margin: 10px;
-  display: inline-block;
-  background-color: #f1f1f1;
-  -webkit-box-shadow: 6px 6px 12px #525252;
-          box-shadow: 6px 6px 12px #525252;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
+.intro .intro-right .tags .tagNames {
+  margin-right: 15px;
+  background-color: #575988;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #eeeeee;
+}
+
+.intro .intro-right .download-cv {
+  margin-top: 60px;
+  text-transform: lowercase;
+  font-size: 14px;
   font-weight: bolder;
 }
 
-header .download-cv {
-  margin: 30px;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
+.intro .intro-right .download-cv span {
+  border-bottom: 3px solid #575988;
+}
+
+.content-wrapper {
+  height: 100vh;
+  padding: 70px 0;
+}
+
+.content-wrapper h1 {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.content-wrapper h1 span {
+  border-bottom: 3px solid #575988;
+}
+
+.content-wrapper h1 .up-level {
+  margin-left: 10px;
 }
 
 .projects {
-  padding-top: 40px;
-  height: 100vh;
+  background-color: #e5e5e5;
 }
 
-.projects h1 {
-  text-align: center;
-  font-family: 'Playfair Display';
-  font-size: 40px;
-}
-
-.freelance {
-  background-color: #536DFE;
-  padding: 90px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 21px;
-}
-
-.freelance p {
-  margin: 15px 0;
-  width: 100% !important;
-  color: #f1f1f1;
-}
-
-.freelance i {
-  color: lightseagreen;
-}
-
-.contact-us {
-  height: 100vh;
-  padding-top: 40px;
-}
-
-.contact-us .reach-out-image {
-  height: 500px;
-  width: 500px;
-  margin: 0 18%;
-  display: inline-block;
-}
-
-.contact-us h1 {
-  text-align: center;
-  font-family: 'Playfair Display';
-  font-size: 40px;
-}
-
-.contact-us .contact-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-us div {
-  width: 80%;
-  margin-bottom: 20px;
-}
-
-.contact-us div .label-name {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin: 8px 0;
-  letter-spacing: 1px;
-}
-
-.contact-us .social ul {
-  list-style-type: none;
-}
-
-.contact-us .social ul li {
-  display: inline;
-}
-
-.contact-us .social ul li a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #525252;
+.contact {
+  background-color: #fff;
 }
 
 footer {
@@ -294,5 +181,62 @@ footer .heart {
 footer #last-update {
   font-size: 12px;
   font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    margin: 0 70px;
+  }
+  .intro {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
+  .intro .intro-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro .intro-right p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    margin: 0;
+  }
+  .intro {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
+  .intro .intro-left img {
+    height: 250px;
+    width: 250px;
+  }
+  .intro .intro-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro .intro-right p {
+    margin-bottom: 30px;
+  }
+  .intro .intro-right .tags {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro .intro-right .tags .tagNames {
+    margin-right: 0;
+    margin: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
