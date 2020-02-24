@@ -6,8 +6,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #525252;
@@ -20,14 +18,12 @@ body {
   position: relative;
   background-color: #eeeeee;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch
 }
 
 .wrapper {
   height: auto;
   background-color: #fff;
   margin: 0 150px;
-  -webkit-overflow-scrolling: touch
 }
 
 .logo {
@@ -68,7 +64,6 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-overflow-scrolling: touch
 }
 
 .intro .intro-left {
@@ -160,7 +155,6 @@ nav a:hover {
 
 .content-wrapper h1 .up-level {
   margin-left: 10px;
-  text-decoration: none;
 }
 
 .projects {
